@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <declare-styleable name="TitleBar" tools:ignore="ResourceName">
+        <!-- 整体样式 -->
+        <attr name="barStyle">
+            <enum name="light" value="0x10" />
+            <enum name="night" value="0x20" />
+            <enum name="transparent" value="0x30" />
+        </attr>
+        <!-- 中间 -->
+        <attr name="title" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+        <!-- 左边 -->
+        <attr name="leftTitle" format="string" />
+        <attr name="leftIcon" format="reference" /><!-- leftIcon 优先于 backButton -->
+        <attr name="backButton" format="boolean" /><!-- 返回按钮（默认开） -->
+        <attr name="leftColor" format="color" />
+        <attr name="leftSize" format="dimension" />
+        <attr name="leftBackground" format="reference|color" />
+        <!-- 右边 -->
+        <attr name="rightTitle" format="string" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightColor" format="color" />
+        <attr name="rightSize" format="dimension" />
+        <attr name="rightBackground" format="reference|color" />
+        <!-- 分割线 -->
+        <attr name="lineVisible" format="boolean" />
+        <attr name="lineColor" format="reference|color" />
+        <attr name="lineSize" format="dimension" />
+    </declare-styleable>
+
+    <!--indexableView-->
+    <declare-styleable name="IndexableLayout">
+        <attr name="indexBar_selectedTextColor" format="color" />
+        <attr name="indexBar_textColor" format="color" />
+        <attr name="indexBar_textSize" format="dimension" />
+        <attr name="indexBar_textSpace" format="dimension" />
+        <attr name="indexBar_background" format="reference|color" />
+        <attr name="indexBar_layout_width" format="dimension">
+            <!--<enum name="wrap_content" value="-2" /> 暂不支持 -->
+        </attr>
+        <attr name="indexBar_layout_height" format="dimension" />
+    </declare-styleable>
+
+    <!--dropDownMenu-->
+    <declare-styleable name="DropDownMenu">
+        <attr name="ddunderlineColor" format="color" />
+        <attr name="dddividerColor" format="color" />
+        <attr name="ddtextSelectedColor" format="color" />
+        <attr name="ddtextUnselectedColor" format="color" />
+        <attr name="ddmenuBackgroundColor" format="color" />
+        <attr name="ddmaskColor" format="color" />
+        <attr name="ddmenuTextSize" format="dimension" />
+        <attr name="ddmenuSelectedIcon" format="reference" />
+        <attr name="ddmenuUnselectedIcon" format="reference" />
+        <attr name="ddmenuMenuHeightPercent" format="float" />
+    </declare-styleable>
+
+    <!-- 自定义 字体 TextView -->
+    <declare-styleable name="FontTextView">
+        <attr name="font_type" format="integer">
+            <enum name="defaultFont" value="0" />
+            <enum name="regular" value="1" />
+            <enum name="helvetica" value="2" />
+            <enum name="divination" value="3" />
+        </attr>
+        <attr name="font_bold" format="boolean" />
+        <attr name="font_full" format="boolean" />
+    </declare-styleable>
+
+
+    <!--        SelectableRoundedImageView       -->
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <!-- item 侧滑包裹布局 -->
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean" />
+        <attr name="ios" format="boolean" />
+        <attr name="leftSwipe" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SignatureView">
+        <attr name="enableSignature" format="boolean" />
+        <attr name="penSize" format="dimension"/>
+        <attr name="penColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+    </declare-styleable>
+
+    <!--************ QMUILoading ***********-->
+    <declare-styleable name="QMUILoadingView">
+        <attr name="qmui_loading_view_size" format="dimension"/>
+        <attr name="android:color"/>
+    </declare-styleable>
+    <attr name="QMUILoadingStyle" format="reference"/>
+
+
+</resources>

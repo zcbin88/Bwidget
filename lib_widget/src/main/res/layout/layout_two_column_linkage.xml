@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:orientation="horizontal">
+
+    <com.bingo.widget.dialog.picker.NumberPickerView
+        android:id="@+id/npv_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:npv_ShowCount="5"
+        app:npv_ItemPaddingVertical="2dp"
+        app:npv_TextSizeNormal="16sp"
+        app:npv_TextSizeSelected="20sp"
+        app:npv_WrapSelectorWheel="false"
+        app:npv_DividerHeight="1px"
+        app:npv_DividerColor="@color/number_picker_view_divider_color"
+        app:npv_TextColorSelected="@color/number_picker_view_value_color"
+        app:npv_TextColorNormal="@color/number_picker_view_item_color" />
+
+    <com.bingo.widget.dialog.picker.NumberPickerView
+        android:id="@+id/npv_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:npv_ShowCount="5"
+        app:npv_ItemPaddingVertical="2dp"
+        app:npv_TextSizeNormal="16sp"
+        app:npv_TextSizeSelected="20sp"
+        app:npv_WrapSelectorWheel="false"
+        app:npv_DividerHeight="1px"
+        app:npv_DividerColor="@color/number_picker_view_divider_color"
+        app:npv_TextColorSelected="@color/number_picker_view_value_color"
+        app:npv_TextColorNormal="@color/number_picker_view_item_color" />
+
+</LinearLayout>

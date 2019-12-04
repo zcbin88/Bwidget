@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Widget</string>
+
+    <string-array name="indexable_letter">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+    </string-array>
+
+    <string name="search_hint">input key word</string>
+    <string name="search_cancel">cancel</string>
+    <string name="search_verify">search</string>
+
+    <string name="search_lately">recent search</string>
+
+    <string name="text_hint_filter_search_location">input the location</string>
+    <string name="text_hint_filter_search_code">input the code</string>
+    <string name="text_hint_filter_search_desc">input the description</string>
+
+    <string name="hint_year">year</string>
+    <string name="hint_month">month</string>
+    <string name="hint_day">day</string>
+    <string name="hint_hour">hour</string>
+    <string name="hint_minute">minute</string>
+    <string name="hint_second">second</string>
+    <string name="text_cancel">cancel</string>
+
+    <string name="dialog_confirm">confirm</string>
+
+    <string name="dialog_cancel">cancel</string>
+    <string name="dialog_no">no</string>
+    <string name="dialog_yes">yes</string>
+</resources>

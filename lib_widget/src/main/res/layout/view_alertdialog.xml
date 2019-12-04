@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_alert_cancel_confirm">
+
+    <com.bingo.widget.FontTextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/information_dark_grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/alert_dialog_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_neg"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/alert_dialog_left_selector"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="@color/action_sheet_blue" />
+
+        <View
+            android:id="@+id/img_line"
+            android:layout_width="1px"
+            android:layout_height="43dp"
+            android:background="@color/alert_dialog_line" />
+
+        <Button
+            android:id="@+id/btn_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:background="@drawable/alert_dialog_right_selector"
+            android:textSize="16sp"
+            android:textColor="@color/action_sheet_blue" />
+    </LinearLayout>
+
+</LinearLayout>

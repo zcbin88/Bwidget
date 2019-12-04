@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <dimen name="default_indexBar_textSize">14sp</dimen>
+    <dimen name="default_indexBar_textSpace">4dp</dimen>
+    <dimen name="default_indexBar_layout_width">24dp</dimen>
+    <dimen name="default_indexBar_layout_height">400dp</dimen>
+
+    <dimen name="cpb_stroke_width">4dp</dimen>
+
+    <dimen name="filter_button_round">5dp</dimen>
+
+    <dimen name="pen_size">3dp</dimen>
+
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="pickerview_textsize">20sp</dimen>
+
+    <!-- 通用字号 -->
+    <dimen name="general_font_size_big">15sp</dimen>
+    <dimen name="general_font_size_normal">14sp</dimen>
+
+    <!--dialog radius-->
+    <dimen name="dialog_radius">8dp</dimen>
+    <dimen name="dialog_pos_neg_btn_radius">6dp</dimen>
+
+    <dimen name="space_10">5dp</dimen>
+    <dimen name="space_20">10dp</dimen>
+    <dimen name="space_30">15dp</dimen>
+    <dimen name="space_36">18dp</dimen>
+    <dimen name="space_40">20dp</dimen>
+    <dimen name="space_50">25dp</dimen>
+    <dimen name="space_60">30dp</dimen>
+    <dimen name="space_80">40dp</dimen>
+    <dimen name="space_100">50dp</dimen>
+    <dimen name="space_160">80dp</dimen>
+    <dimen name="space_200">100dp</dimen>
+    <dimen name="space_400">200dp</dimen>
+    <dimen name="space_600">300dp</dimen>
+    <dimen name="font_size_30px">15sp</dimen>
+
+</resources>

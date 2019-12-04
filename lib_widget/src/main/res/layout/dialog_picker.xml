@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_cancel_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/dialog_blue"
+            android:textSize="@dimen/general_font_size_normal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/dialog_black"
+            android:textSize="@dimen/general_font_size_big"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_confirm_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/dialog_confirm"
+            android:textColor="@color/dialog_blue"
+            android:textSize="@dimen/general_font_size_normal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <include layout="@layout/line_view_horizontal"/>
+
+    <FrameLayout
+        android:id="@+id/fl_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        />
+
+</LinearLayout>

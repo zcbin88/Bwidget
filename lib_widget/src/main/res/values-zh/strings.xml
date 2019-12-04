@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Widget</string>
+
+    <string name="search_hint">请输入关键字</string>
+    <string name="search_cancel">取消</string>
+    <string name="search_verify">搜索</string>
+
+    <string name="search_lately">最近搜索</string>
+
+    <string name="text_hint_filter_search_location">请输入库位</string>
+    <string name="text_hint_filter_search_code">请输入编号</string>
+    <string name="text_hint_filter_search_desc">请输入描述</string>
+
+    <string name="hint_year">年</string>
+    <string name="hint_month">月</string>
+    <string name="hint_day">日</string>
+    <string name="hint_hour">时</string>
+    <string name="hint_minute">分</string>
+    <string name="hint_second">秒</string>
+
+    <!-- dialog -->
+    <string name="dialog_confirm">确定</string>
+
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_no">否</string>
+    <string name="dialog_yes">是</string>
+    <string name="text_cancel">取消</string>
+
+</resources>

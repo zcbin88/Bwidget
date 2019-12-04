@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="#f4f4f3">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_gravity="center">
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/bar_icon_back_black"
+            android:background="@drawable/bar_selector_selectable_black"/>
+        <!--
+            编辑框控件
+            宽度匹配屏幕
+            高度适应文字
+            在编辑框左边画上搜索的那个图片
+            单行编辑框
+         -->
+        <EditText
+            android:id="@+id/et_searchtext_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/btn_back"
+            android:background="@drawable/search_bg_et"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="5dp"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:textSize="14sp"
+            android:hint="@string/search_hint" />
+        <!--
+            图片控件
+            宽度高度都是适应图片大小
+            图片资源来自一个配置文件
+            对齐在编辑框的右边
+            默认不可见且不占用屏幕位置
+         -->
+        <ImageView
+            android:id="@+id/ib_searchtext_delete"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/et_searchtext_search"
+            android:layout_alignEnd="@+id/et_searchtext_search"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/search_close" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/relativeLayout"
+        android:background="@drawable/search_button_shap"
+        android:textSize="13sp"
+        android:textAllCaps="false"
+        android:textColor="@color/gray_7c7c7c"
+        android:text="@string/search_cancel" />
+</LinearLayout>
