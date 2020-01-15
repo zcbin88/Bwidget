@@ -5,13 +5,16 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 import android.util.AttributeSet;
 
-/**
- * @author ：wiggins on 2017/10/17 10:59
- * @e-mail ：traywangjun@gmail.com
- * desc : 解决ScrollView中嵌套recycleView 出现的不显示，显示不全
- * version :1.0
- */
-
+ /**
+  * ================================
+  * @author:  zcb
+  * @email:   zhang-cb@foxmail.com
+  * @time:    2020-01-15 14:01
+  * @version: 1.0
+  * @description: 解决ScrollView中嵌套recycleView 出现的不显示，显示不全
+  *                 显示不全主要是因为recyclerview不知道数据应该是多高
+  * =================================
+  */
 public class BRecycleView extends RecyclerView {
 
     public BRecycleView(Context context) {

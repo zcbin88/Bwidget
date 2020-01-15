@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+<!--    <TextView-->
+<!--        android:id="@+id/tag_label_tv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/bg_discount_label"-->
+<!--        android:gravity="center"-->
+<!--        android:paddingBottom="2dp"-->
+<!--        android:paddingLeft="8dp"-->
+<!--        android:paddingRight="8dp"-->
+<!--        android:paddingTop="2dp"-->
+<!--        android:text="特惠"-->
+<!--        android:textColor="#794302"-->
+<!--        android:textSize="9.3sp"-->
+<!--        android:visibility="visible" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp">
+
+        <com.bingo.widget.FontTextView
+            android:id="@+id/valid_time_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:text="12"
+            android:textColor="#2c2c2c"
+            android:textSize="14.3sp"
+            app:font_bold="true" />
+
+        <TextView
+            android:id="@+id/average_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="comment"
+            android:textColor="#7c7c7c"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

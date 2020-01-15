@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormActivity">
+
+    <com.zcb.fuckapp.view.GInputView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:ghint="input"
+        app:glabel="Text"
+        app:grequired="true"
+        app:shape="text"/>
+
+    <com.zcb.fuckapp.view.GInputView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:ghint="@string/app_name"
+        app:glabel="select"
+        app:grequired="true"
+        app:shape="select"/>
+    <com.zcb.fuckapp.view.GInputView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:ghint="@string/dialog_ok"
+        app:glabel="date"
+        app:grequired="false"
+        app:shape="date"/>
+
+    <Button
+        android:text="No Require"
+        android:onClick="norequied"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:text="Yes Require"
+        android:onClick="yesrequied"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:text="Date"
+        android:onClick="date"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:text="Select"
+        android:onClick="select"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:text="Text"
+        android:onClick="text"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:text="right"
+        android:onClick="right"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:text="edit"
+        android:onClick="edit"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:text="增加事件"
+        android:onClick="addListener"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:text="移除事件"
+        android:onClick="removeListener"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

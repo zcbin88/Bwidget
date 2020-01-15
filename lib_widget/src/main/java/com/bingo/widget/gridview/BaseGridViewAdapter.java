@@ -1,4 +1,4 @@
-package com.bingo.iservice.widget.gridview;
+package com.bingo.widget.gridview;
 
 import android.content.Context;
 import android.util.SparseArray;

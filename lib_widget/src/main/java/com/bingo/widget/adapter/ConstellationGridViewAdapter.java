@@ -5,7 +5,7 @@ import androidx.core.content.ContextCompat;
 import android.widget.TextView;
 
 import com.bingo.widget.R;
-import com.bingo.iservice.widget.gridview.BaseGridViewAdapter;
+import com.bingo.widget.gridview.BaseGridViewAdapter;
 
 import java.util.List;
 

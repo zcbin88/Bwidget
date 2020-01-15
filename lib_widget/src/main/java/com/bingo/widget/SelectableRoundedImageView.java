@@ -24,7 +24,15 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.net.Uri;
 import android.util.AttributeSet;
-
+ /**
+  * ================================
+  * @author:  zcb
+  * @email:   zhang-cb@foxmail.com
+  * @time:    2020-01-15 14:38
+  * @version: 1.0
+  * @description: https://github.com/pungrue26/SelectableRoundedImageView
+  * =================================
+  */
 
 public class SelectableRoundedImageView extends androidx.appcompat.widget.AppCompatImageView {
 
