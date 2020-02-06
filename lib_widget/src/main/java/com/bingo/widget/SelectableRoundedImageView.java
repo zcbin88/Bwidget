@@ -30,7 +30,8 @@ import android.util.AttributeSet;
   * @email:   zhang-cb@foxmail.com
   * @time:    2020-01-15 14:38
   * @version: 1.0
-  * @description: https://github.com/pungrue26/SelectableRoundedImageView
+  * @description: 可以Diy的Image View
+  * https://github.com/pungrue26/SelectableRoundedImageView
   * =================================
   */
 

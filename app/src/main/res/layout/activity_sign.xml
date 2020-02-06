@@ -18,7 +18,7 @@
         android:layout_marginTop="10dp"
         sign:backgroundColor="@color/white"
         sign:enableSignature="true"
-        sign:penColor="@color/black"
+        sign:penColor="#000000"
         sign:penSize="3dp" />
 
     <LinearLayout

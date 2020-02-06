@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FormActivity">
+    tools:context=".activity.InputViewActivity">
 
-    <com.zcb.fuckapp.view.GInputView
+    <com.bingo.widget.BInputView
         android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -16,17 +16,17 @@
         app:grequired="true"
         app:shape="text"/>
 
-    <com.zcb.fuckapp.view.GInputView
+    <com.bingo.widget.BInputView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         app:ghint="@string/app_name"
         app:glabel="select"
         app:grequired="true"
         app:shape="select"/>
-    <com.zcb.fuckapp.view.GInputView
+    <com.bingo.widget.BInputView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:ghint="@string/dialog_ok"
+        app:ghint="ok"
         app:glabel="date"
         app:grequired="false"
         app:shape="date"/>
