@@ -85,15 +85,15 @@ public class BInputView extends LinearLayout {
 
     private void getAttr(AttributeSet attrs) {
         TypedArray typedArray = mContext.obtainStyledAttributes(attrs, R.styleable.BInputView);
-        shape = typedArray.getInt(R.styleable.BInputView_shape, SHAPE_TEXT);
-        hint = typedArray.getString(R.styleable.BInputView_ghint);
-        required = typedArray.getBoolean(R.styleable.BInputView_grequired, false);
-        label = typedArray.getString(R.styleable.BInputView_glabel);
-        labelTextColor = typedArray.getColor(R.styleable.BInputView_glabel_text_color, Color.GRAY);
-        labelWidth = typedArray.getDimension(R.styleable.BInputView_glabel_width, labelWidth);
-        content = typedArray.getString(R.styleable.BInputView_gvalue);
-        inputType = typedArray.getInt(R.styleable.BInputView_ginput_type, INPUT_TEXT);
-        labelBold = typedArray.getBoolean(R.styleable.BInputView_glabel_bold, labelBold);
+        shape = typedArray.getInt(R.styleable.BInputView_bshape, SHAPE_TEXT);
+        hint = typedArray.getString(R.styleable.BInputView_bhint);
+        required = typedArray.getBoolean(R.styleable.BInputView_brequired, false);
+        label = typedArray.getString(R.styleable.BInputView_blabel);
+        labelTextColor = typedArray.getColor(R.styleable.BInputView_blabel_text_color, Color.GRAY);
+        labelWidth = typedArray.getDimension(R.styleable.BInputView_blabel_width, labelWidth);
+        content = typedArray.getString(R.styleable.BInputView_bvalue);
+        inputType = typedArray.getInt(R.styleable.BInputView_binput_type, INPUT_TEXT);
+        labelBold = typedArray.getBoolean(R.styleable.BInputView_blabel_bold, labelBold);
     }
 
     private void initView() {

@@ -11,25 +11,25 @@
         android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:ghint="input"
-        app:glabel="Text"
-        app:grequired="true"
-        app:shape="text"/>
+        app:bhint="input"
+        app:blabel="Text"
+        app:brequired="true"
+        app:bshape="text"/>
 
     <com.bingo.widget.BInputView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:ghint="@string/app_name"
-        app:glabel="select"
-        app:grequired="true"
-        app:shape="select"/>
+        app:bhint="@string/app_name"
+        app:blabel="select"
+        app:brequired="true"
+        app:bshape="select"/>
     <com.bingo.widget.BInputView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        app:ghint="ok"
-        app:glabel="date"
-        app:grequired="false"
-        app:shape="date"/>
+        app:bhint="ok"
+        app:blabel="date"
+        app:brequired="false"
+        app:bshape="date"/>
 
     <Button
         android:text="No Require"

@@ -3,7 +3,8 @@ package com.bingo.widget.dropdownmenu.view;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.Checkable;
-import android.widget.TextView;
+
+import androidx.appcompat.widget.AppCompatTextView;
 
 /**
  * author: baiiu
@@ -11,7 +12,7 @@ import android.widget.TextView;
  * description:
  */
 
-public class FilterCheckedTextView extends TextView implements Checkable {
+public class FilterCheckedTextView extends AppCompatTextView implements Checkable {
     private boolean mChecked;
 
     public FilterCheckedTextView(Context context) {

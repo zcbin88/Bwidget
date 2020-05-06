@@ -89,21 +89,21 @@
     </declare-styleable>
 
     <declare-styleable name="BInputView">
-        <attr name="shape" format="enum">
+        <attr name="bshape" format="enum">
             <enum name="text" value="0"/>
             <enum name="date" value="1"/>
             <enum name="select" value="2"/>
             <enum name="right" value="3"/>
             <enum name="edit" value="4"/>
         </attr>
-        <attr name="glabel" format="string|reference"/>
-        <attr name="glabel_text_color" format="color"/>
-        <attr name="glabel_width" format="dimension|reference"/>
-        <attr name="glabel_bold" format="boolean"/>
-        <attr name="gvalue" format="string|reference"/>
-        <attr name="ghint" format="string|reference"/>
-        <attr name="grequired" format="boolean"/>
-        <attr name="ginput_type" format="enum">
+        <attr name="blabel" format="string|reference"/>
+        <attr name="blabel_text_color" format="color"/>
+        <attr name="blabel_width" format="dimension|reference"/>
+        <attr name="blabel_bold" format="boolean"/>
+        <attr name="bvalue" format="string|reference"/>
+        <attr name="bhint" format="string|reference"/>
+        <attr name="brequired" format="boolean"/>
+        <attr name="binput_type" format="enum">
             <enum name="number" value="0"/>
             <enum name="numberSigned" value="1"/>
             <enum name="numberDecimal" value="2"/>

@@ -1,4 +1,9 @@
 apply plugin: 'com.android.library'
+//pply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
+
+// 这个version是区分library版本的，因此当我们需要更新library时记得修改这个version
+version = "1.0.0"
 android {
     compileSdkVersion 28
 
@@ -37,8 +42,20 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
 
     implementation 'androidx.appcompat:appcompat:1.0.0'
     api 'androidx.recyclerview:recyclerview:1.0.0'
     api 'com.github.promeg:tinypinyin-lexicons-android-cncity:2.0.3'
+}
+
+publish {
+    userOrg = 'zhangchunbin'
+    groupId = 'com.bingo'
+    artifactId = 'Blib-widget'
+    publishVersion = '1.0.4'
+    desc = 'Blib-widget library'
+    website = "https://github.com/zhangchunbin/Bwidget"
 }

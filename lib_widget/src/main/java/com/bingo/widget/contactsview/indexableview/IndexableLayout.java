@@ -1,5 +1,6 @@
 package com.bingo.widget.contactsview.indexableview;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -615,6 +616,7 @@ public class IndexableLayout extends FrameLayout {
         addView(mCenterOverlay);
     }
 
+    @SuppressLint("RestrictedApi")
     private void initMDOverlay(int color) {
         mMDOverlay = new AppCompatTextView(mContext);
         mMDOverlay.setBackgroundResource(R.drawable.indexable_bg_md_overlay);
