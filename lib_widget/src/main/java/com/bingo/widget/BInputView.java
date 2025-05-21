@@ -4,18 +4,19 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
-import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
-
 import android.text.InputType;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 
 /**
@@ -34,6 +35,7 @@ public class BInputView extends LinearLayout {
 
     private int shape;
     private String label;
+    private float labelTextSize;//sp
     private int labelTextColor = 0xFFD9D9D9;
     float labelWidth = 0.0f;
     private boolean labelBold = false;
@@ -42,6 +44,9 @@ public class BInputView extends LinearLayout {
     private String hint;
     private boolean required;
     private int inputType;
+    private int valueTextColor;
+    private float valueTextSize;
+    private int valueMinHeight;
     //TextView
     public static final int SHAPE_TEXT = 0;
     //TextView 选择时间
@@ -94,6 +99,10 @@ public class BInputView extends LinearLayout {
         content = typedArray.getString(R.styleable.BInputView_bvalue);
         inputType = typedArray.getInt(R.styleable.BInputView_binput_type, INPUT_TEXT);
         labelBold = typedArray.getBoolean(R.styleable.BInputView_blabel_bold, labelBold);
+        labelTextSize = typedArray.getDimensionPixelSize(R.styleable.BInputView_blabel_text_size, sp2px(getContext(), 14));
+        valueTextColor = typedArray.getColor(R.styleable.BInputView_bvalue_text_color, Color.GRAY);
+        valueTextSize = typedArray.getDimensionPixelSize(R.styleable.BInputView_bvalue_text_size, sp2px(getContext(), 13));
+        valueMinHeight = typedArray.getDimensionPixelSize(R.styleable.BInputView_bvalue_min_height, 30);//默认30
     }
 
     private void initView() {
@@ -114,6 +123,9 @@ public class BInputView extends LinearLayout {
 
 //        tvLabel.setBoldText(labelBold);
         tvLabel.setText(label);
+        if (labelTextSize > 0) {
+            tvLabel.setTextSize(TypedValue.COMPLEX_UNIT_PX, labelTextSize);
+        }
         tvLabel.setTextColor(labelTextColor);
         if (labelWidth > 0.0f) {
             tvLabel.setWidth(dp2px(getContext(), labelWidth));
@@ -121,6 +133,12 @@ public class BInputView extends LinearLayout {
 
         tvValue.setText(content);
         tvValue.setHint(hint);
+        tvValue.setTextSize(TypedValue.COMPLEX_UNIT_PX, valueTextSize);
+        etValue.setTextSize(TypedValue.COMPLEX_UNIT_PX, valueTextSize);
+        tvValue.setTextColor(valueTextColor);
+        tvValue.setMinHeight(dp2px(getContext(),valueMinHeight));
+        etValue.setMinHeight(dp2px(getContext(),valueMinHeight));
+        etValue.setTextColor(valueTextColor);
 
         etValue.setText(content);
         etValue.setHint(hint);
@@ -133,8 +151,8 @@ public class BInputView extends LinearLayout {
 
     private void initShape() {
 
-        tvValue.setVisibility(shape == SHAPE_EDIT ? View.GONE:View.VISIBLE);
-        etValue.setVisibility(shape == SHAPE_EDIT ? View.VISIBLE:View.GONE);
+        tvValue.setVisibility(shape == SHAPE_EDIT ? View.GONE : View.VISIBLE);
+        etValue.setVisibility(shape == SHAPE_EDIT ? View.VISIBLE : View.GONE);
 
         switch (shape) {
             case SHAPE_TEXT:
@@ -192,8 +210,6 @@ public class BInputView extends LinearLayout {
         }
 
     }
-
-
 
 
     private void updateView() {
@@ -304,14 +320,15 @@ public class BInputView extends LinearLayout {
 
     public void removeGvListener() {
         this.setOnClickListener(null);
-        if (this.onGvListener!=null){
-            this.onGvListener=null;
+        if (this.onGvListener != null) {
+            this.onGvListener = null;
         }
     }
 
     public interface OnGvListener {
         void click();
     }
+
     public static int dp2px(Context context, float dpValue) {
         if (context != null) {
             final float scale = context.getResources().getDisplayMetrics().density;
@@ -319,5 +336,28 @@ public class BInputView extends LinearLayout {
         } else {
             return 0;
         }
+    }
+
+
+    /**
+     * 将px值转换为sp值，保证文字大小不变
+     *
+     * @param pxValue （DisplayMetrics类中属性scaledDensity）
+     * @return
+     */
+    public static int px2sp(Context context, float pxValue) {
+        final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
+        return (int) (pxValue / fontScale + 0.5f);
+    }
+
+    /**
+     * 将sp值转换为px值，保证文字大小不变
+     *
+     * @param spValue （DisplayMetrics类中属性scaledDensity）
+     * @return
+     */
+    public static int sp2px(Context context, float spValue) {
+        final float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
+        return (int) (spValue * fontScale + 0.5f);
     }
 }

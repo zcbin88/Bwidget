@@ -71,5 +71,7 @@
     <!-- NumberPickerView 分割线颜色 ；根据需求定义颜色-->
     <color name="number_picker_view_divider_color">#ececec</color>
 
+    <color name="divider">#59d3d7dc</color>
+
 
 </resources>

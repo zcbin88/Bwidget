@@ -98,9 +98,13 @@
         </attr>
         <attr name="blabel" format="string|reference"/>
         <attr name="blabel_text_color" format="color"/>
+        <attr name="blabel_text_size" format="dimension|reference"/>
         <attr name="blabel_width" format="dimension|reference"/>
         <attr name="blabel_bold" format="boolean"/>
         <attr name="bvalue" format="string|reference"/>
+        <attr name="bvalue_text_color" format="color"/>
+        <attr name="bvalue_text_size" format="dimension|reference"/>
+        <attr name="bvalue_min_height" format="dimension|reference"/>
         <attr name="bhint" format="string|reference"/>
         <attr name="brequired" format="boolean"/>
         <attr name="binput_type" format="enum">
@@ -176,6 +180,13 @@
     <style name="DialogRightAnim" parent="android:Animation">
         <item name="android:windowEnterAnimation">@anim/dialog_right_in</item>
         <item name="android:windowExitAnimation">@anim/dialog_right_out</item>
+    </style>
+
+    <style name="MultiWaveHeader">
+    </style>
+    <style name="MultiWaveHeader.Wave">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
     </style>
 
 

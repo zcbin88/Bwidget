@@ -23,20 +23,56 @@
         app:blabel="select"
         app:brequired="true"
         app:bshape="select"/>
+<!--    <com.bingo.widget.BInputView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:paddingRight="15dp"-->
+<!--        android:paddingTop="8dp"-->
+<!--        android:paddingBottom="8dp"-->
+<!--        app:bhint="ok"-->
+<!--        app:blabel="date"-->
+<!--        app:brequired="false"-->
+<!--        app:bshape="date"/>-->
     <com.bingo.widget.BInputView
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        app:bhint="@string/app_name"
+        app:blabel="select"
+        app:brequired="true"
+        app:bshape="edit"/>
+    <com.bingo.widget.BInputView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:minHeight="40dp"
         app:bhint="ok"
         app:blabel="date"
-        app:brequired="false"
-        app:bshape="date"/>
-
+        app:blabel_width="50dp"
+        app:blabel_text_size="12sp"
+        app:blabel_text_color="@color/orange_fb4d38"
+        app:bvalue="godsfgodskofgdfokgkodgkodkgodfgkdsfokgodfgk"
+        app:bvalue_text_size="12sp"
+        app:bvalue_text_color="@color/black_5a626d"
+        app:brequired="false"/>
+    <com.bingo.widget.BInputView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:minHeight="40dp"
+        app:bhint="ok"
+        app:blabel="date"
+        app:bvalue="tkttttttttttttttttokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokokosodfokfodofdoskfgodgodkgodkodkfgosdkgkodfkgodsfgodskofgdfokgkodgkodkgodfgkdsfokgodfgk"
+        app:bvalue_text_size="12sp"
+        app:bvalue_text_color="@color/black_5a626d"
+        app:brequired="false"/>
     <Button
         android:text="No Require"
         android:onClick="norequied"
         android:textAllCaps="false"
         android:layout_width="match_parent"
-        android:layout_height="40dp" />
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"/>
     <Button
         android:text="Yes Require"
         android:onClick="yesrequied"
@@ -53,6 +89,7 @@
         android:text="Select"
         android:onClick="select"
         android:textAllCaps="false"
+
         android:layout_width="match_parent"
         android:layout_height="40dp" />
     <Button
